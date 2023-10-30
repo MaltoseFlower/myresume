@@ -1,14 +1,21 @@
 body {
     font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    line-height: 1.8em;
+    font-size: 13px;
+    line-height: 1.5em;
     display: flex;
     justify-content: center;
+    width:210mm;
+    height:297mm;
+    /* border:1px #f00 solid; */
 }
 
 .container {
-    margin-top: 2.66666667em;
-    /* 40/15 */
+    /* margin-top: 2.66666667em; */
+    /* writing-mode: tb-lr; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 h1,
@@ -47,7 +54,9 @@ address {
 }
 
 .contact li span {
-    width: 5.33333333em;
+    padding:0px;
+    writing-mode: lr;
+    /* width: 5.33333333em; */
     /* 80/15 */
     text-align: right;
     display: inline-block;
@@ -61,19 +70,20 @@ address {
 
 .content {
     display: flex;
-    margin-top: 1.33333333em;
+    /* margin-top: 1.33333333em; */
 }
 
 .content > article > section {
-    padding: .5em 0;
+    padding: .4em 0;
 }
+
 
 h2 {
     font-size: 1.33333333em;
     /* 20/15 */
     padding-bottom: .33333333em;
     /* 5/15 */
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid rgb(174, 204, 129);
 }
 
 
@@ -130,6 +140,7 @@ h2 {
 
 .project dl dt {
     margin-bottom: .2em;
+    /* writing-mode: lr-tb; */
 }
 
 .project dl dd {
@@ -142,6 +153,14 @@ h2 {
 }
 .project .circle {
     margin-left: 0em;
+}
+.project ul {
+    break-inside: auto;
+    /* display: inline-block; */
+}
+.project li {
+    display: inline-block;
+    writing-mode: tb-lr;
 }
 .project dl dd:first-child {
     padding-top: .66666667em;
@@ -167,32 +186,91 @@ h2 {
     color: white;
     padding: .13333333em .33333333em;
     /* 2px 5px */
-    margin: .33333333em 0 .6em;
+    margin: .33333333em 0 .6em 0;
     /* 5/15 */
     display: inline-block;
-    font-size: .875em;
+    font-size: 1em;
+    font-weight: bold;
+    
     /* 14/16 */
 }
 
 
 /* end project */
+.money-ul li.active:before{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 3px;
+    background: transparent;
+    bottom: 3px;
+    right: 0px;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-55deg);
+    -ms-transform: rotate(-55deg);
+    transform: rotate(-55deg);
+    z-index: 9;
+}
 
+.award-item:before,
+.skill-item dd:before,
+.other-item li:before,
+.eval-item li:before,
+/* .project dl dd li:before {
+    content: "";
+    background: url('../img/check.png') no-repeat;
+    /* 打勾 */
+    /* background-size: .8em .8em; */
+    /* 12/15 */
+    /* display: inline-block; */
+    /* width: .8em; */
+    /* height: .8em; */
+    /* padding-right: .33333333em; */
+    /* 5/15 */
+/* } */
+.award-item,
+.skill-item dd,
+.other-item li,
+.eval-item li,
+.project dl dd li{
+    position: relative;
+}
 .award-item:before,
 .skill-item dd:before,
 .other-item li:before,
 .eval-item li:before,
 .project dl dd li:before {
     content: "";
-    background: url('../img/check.png') no-repeat;
-    background-size: .8em .8em;
-    /* 12/15 */
     display: inline-block;
-    width: .8em;
-    height: .8em;
-    padding-right: .33333333em;
-    /* 5/15 */
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    border: 2px solid #409eff;
+    box-sizing: border-box;
+    vertical-align:middle;
 }
 
+.award-item:after,
+.skill-item dd:after,
+.other-item li:after,
+.eval-item li:after,
+.project dl dd li:after{
+    content: "";
+    box-sizing: border-box;
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    border: 2px solid #409eff;
+    border-top: 0;
+    border-left: 0;
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    transform: translateY(-50%) rotate(45deg);
+    
+}
 
 /* css for skill */
 
@@ -220,42 +298,52 @@ h2 {
 
 /* css for footer */
 
-footer {
+.header1{
+    width: 160mm;
+    height: 20mm;
+    /* margin: 30px auto; */
     text-align: center;
-    font-size: .8em;
-    margin: 3em 0 2em;
 }
-
+.header2{
+    width: 160mm;
+    margin-top: 0;
+    margin-left: 25px;
+    /* padding-bottom: 10px; */
+    vertical-align: text-top;
+    justify-content: space-between;
+}
 
 /* end footer */
 
 
 /* css for media */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 210mm) {
     .container {
-        width: 900px;
+        width: 210mm;
     }
-    header {
+    /* header {
         justify-content: space-between;
-    }
-    .title {
-        text-align: left;
-    }
+    } */
+    /* .title {
+        text-align: center;
+        position: relative;
+        margin-left: 50%;
+    } */
     .content > article {
-        width: 27em;
+        width: 190mm;
     }
     .content > article:first-child {
-        padding-right: 3em;
+        padding-right: 2em;
     }
     .content > article:last-child {
-        padding-left: 3em;
+        padding-left: 2em;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 210mm) {
     .container {
-        width: 95%;
+        width: 100%;
     }
     .content > article {
         width: 100%;

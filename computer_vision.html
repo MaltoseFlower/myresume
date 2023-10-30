@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>罗然 - 个人简历</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <header>
+                <section class="title">
+                    <h1>罗 然</h1>
+                    <!-- <p>Web前端开发</p> -->
+                </section>
+                <address>
+                    <ul class="contact">
+                        <li><span>电话：</span>15883658619</li>
+                        <li><span>邮箱：</span><a href="mailto://lrmaltose@gmail.com">lrmaltose@gmail.com</a></li>
+                        <li><span>微信：</span><a>lr1069830451</a></li>
+                        <!-- <li><span>Github：</span><a href="https://github.com/IridescentMia">https://github.com/IridescentMia</a></li> -->
+                    </ul>
+                </address>
+                <img src="./img/mypic.jpg" style="float:right; margin-right: 10px;" width="80" height="112">
+            </header>
+            <article class="content">
+                <article class="content">
+                    <article>
+                        <section class="education">
+                            <h2>教育经历</h2>
+                            <ul>
+                                <li>
+                                    <div class="edu-placeholder"></div>
+                                </li>
+                                <li><span class="edu-year">2021 - 2024</span><span class="edu-circle circle"></span><span class="edu-title">硕士</span></li>
+                                <li class="edu-content">华南理工大学大学 软件工程
+                                    <br>研究方向：<strong>深度学习、模型压缩、知识蒸馏</strong></li>
+                                <li>
+                                    <div class="edu-placeholder"></div>
+                                </li>
+                                <li><span class="edu-year">2017 - 2021</span><span class="edu-circle circle"></span><span class="edu-title">本科</span></li>
+                                <li class="edu-content">成都理工大学 应用物理</li>
+                            </ul>
+                        </section>
+                        <section class="project">
+                            <h2>项目经验</h2>
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dd><span class="key-point">论文</span>
+                                        <dd>2022.7 - 至今<span>共同一作</span></dd>
+                                        <dt><span class="circle"></span>TPAMI — 正在投稿</dt>
+                                            <!-- <span class="key-point">Model Reprogramming</span> -->
+                                            <!-- <span class="key-point">Node.js</span>
+                                            <span class="key-point">MongoDB</span> -->
+                                        <dd>
+                                            <ul>
+                                                <li>本篇论文提出了一种跨域蒸馏的技术，旨在利用现有的预训练视觉大模型，在计算资源受限的情况
+                                                    下，结合知识蒸馏技术，提升下游任务的小模型性能。</li>
+                                                <li>提出将Model Reprogramming和Knowledge Distillation方法结合，通过多种路径（包括分类器参数、教
+                                                    师模型输出的logits）进行知识传递。</li>
+                                                <li>在多个下游任务：Oxford102、Caltech-256-60、StanfordDogs等、多种预训练模型：Swin-B、ResNet50，上面具有显著效果，Top-1 Acc.
+                                                    超过对比方法3%~10%。</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dd><span class="key-point">专利</span>
+                                        <dd>2022.12 - 至今<span>主要发明人</span></dd>
+                                        <dt><span class="circle"></span>一种基于预训练大模型的图像分类—语义分割跨任务知识蒸馏方法 - 正在审核</dt>
+                                        <!-- <dd><span class="key-point">Semantic Segmentation</span>
+                                            <span class="key-point">Knowledge Distillation</span> -->
+                                            <!-- <span class="key-point">Node.js</span>
+                                            <span class="key-point">MongoDB</span> -->
+                                        <dd>
+                                            <ul>
+                                                <li>本篇论文提出了一种跨任务蒸馏的技术，旨在利用现有的预训练视觉大模型，在计算资源受限的情况
+                                                    下，结合知识蒸馏技术，提升下游任务的小模型性能。</li>
+                                                <li>提出利用Model Reprogramming方法完成针对语义分割的重编码，类间距离作为结构化知识，
+                                                    提升语义分割小模型的类别鉴定能力。</li>
+                                                <li>在CamVid、Pascal VOC数据集上面针对Swin-Transformer具有显著效果，mIoU提升1%~3%。</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dd><span class="key-point">项目</span>
+                                        <dd>2021.11 - 2022.4<span>算法实现</span></dd>
+                                        <dt><span class="circle"></span>溢出感知的全整型量化算法设计 - 鹏程实验室项目</dt>
+                                        <!-- <dd><span class="key-point"></span>
+                                            <span class="key-point"></span> -->
+                                            <!-- <span class="key-point">Node.js</span>
+                                            <span class="key-point">MongoDB</span> -->
+                                        <dd>
+                                            <ul>
+                                                <li>针对模型量化过程中比特数较少的累加器容易导致中间结果溢出的问题，设计了一种溢出感知的量
+                                                    化算法，能在累加器比特数受限的情况下避免中间结果溢出，从而达到压缩模型的同时保持性能的效果。</li>
+                                                <!-- <li>量化后的UNet-16bit和UNet-8bit在CityScapes数据集上近乎无损，UNet-4bit损失 1% mIoU。</li> -->
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </section>
+                    </article>
+                <article>
+                    <section class="project">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dd>
+                                        <ul>
+                                            <li>量化后的UNet-16bit和UNet-8bit在CityScapes数据集上近乎无损，UNet-4bit损失 1% mIoU。</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dd><span class="key-point">小项目</span>
+                                    <!-- <dd>2021.11 - 2022.4<span>算法实现</span></dd> -->
+                                    <dt><span class="circle"></span>TensorRT</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>基于TensorRT的量化手段和算子优化，对pytorch训练的模型进行优化、部署。</li>
+                                            <li>使用TensorRT在NVIDIA TITAN XP GPU上部署ResNet50，前后推理速度提升了1.9x, 模型在CIFAR-10上的精度减小了0.08%。</li>
+                                            <li>优化手段：int8 PTQ量化，算子融合</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dd><span class="key-point">竞赛</span>
+                                    <dd>2019.4 - 2019.8<span>队员</span></dd>
+                                    <dt><span class="circle"></span>中国大学生物理学术竞赛 全国三等奖</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>熟练使用Mathematica 和MATLAB 编程，并以此求解偏微分方差。对带电转子的电场进行模拟并可视
+                                                化。</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skill">
+                        <h2>个人技能</h2>
+                        <dl class="skill-item">
+                            <dt>语言</dt>
+                            <dd>英语通过 <strong>CET-6</strong>，能够流畅阅读英文文档</dd>
+                        </dl>
+                        <dl class="skill-item">
+                            <dt>编程语言</dt>
+                            <dd>熟练使用 <strong>Python</strong>进行深度学习脚本编码、数据可视化</dd>
+                            <dd>熟悉 <strong>C++</strong>、熟练使用C++标准模板库</dd>
+                            <dd>熟悉 <strong>MATLAB</strong>、使用过MATLAB进行论文画图、对向量场进行可视化</dd>
+                        </dl>
+                        <dl class="skill-item">
+                            <dt>深度学习框架</dt>
+                            <dd>熟悉 <strong>Pytorch</strong>，熟练使用DDP进行单机多卡训练。</dd>
+                            <dd>熟悉 <strong>OpenMMLab</strong>，熟练使用MMCV、MMSeg、MMRazor进行分割模型训练、蒸馏。</dd>
+                            <dd>使用 <strong>Vue3</strong>完成简单网页的开发。</dd>
+                        </dl>
+                    </section>
+                    <section class="award">
+                        <h2>校园活动</h2>
+                        <ul>
+                            <li class="award-item">2017 – 2018 年度本科学院学生会优秀干事</li>
+                            <li class="award-item">2017 – 2018 担任本科外语协会宣传部干事，进行过手绘海报、PPT 制作、活动宣
+                                传、微信公众号推文。</li>
+                        </ul>
+                    </section>
+                </article>
+            </article>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>罗然 - 个人简历</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <header>
+                <section class="title">
+                    <h1>罗 然</h1>
+                    <!-- <p>Web前端开发</p> -->
+                </section>
+                <address>
+                    <ul class="contact">
+                        <li><span>电话：</span>15883658619</li>
+                        <li><span>邮箱：</span><a href="mailto://lrmaltose@gmail.com">lrmaltose@gmail.com</a></li>
+                        <li><span>微信：</span><a>lr1069830451</a></li>
+                        <!-- <li><span>Github：</span><a href="https://github.com/IridescentMia">https://github.com/IridescentMia</a></li> -->
+                    </ul>
+                </address>
+                <img src="./img/mypic.jpg" style="float:right; margin-right: 10px;" width="80" height="112">
+            </header>
+            <article class="content">
+                <article class="content">
+                    <article>
+                        <section class="education">
+                            <h2>教育经历</h2>
+                            <ul>
+                                <li>
+                                    <div class="edu-placeholder"></div>
+                                </li>
+                                <li><span class="edu-year">2021 - 2024</span><span class="edu-circle circle"></span><span class="edu-title">硕士</span></li>
+                                <li class="edu-content">华南理工大学大学 软件工程
+                                    <br>研究方向：<strong>深度学习、模型压缩、知识蒸馏</strong></li>
+                                <li>
+                                    <div class="edu-placeholder"></div>
+                                </li>
+                                <li><span class="edu-year">2017 - 2021</span><span class="edu-circle circle"></span><span class="edu-title">本科</span></li>
+                                <li class="edu-content">成都理工大学 应用物理</li>
+                            </ul>
+                        </section>
+                        <section class="project">
+                            <h2>项目经验</h2>
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dd><span class="key-point">论文</span>
+                                        <dd>2022.7 - 至今<span>共同一作</span></dd>
+                                        <dt><span class="circle"></span>TPAMI — 正在投稿</dt>
+                                            <!-- <span class="key-point">Model Reprogramming</span> -->
+                                            <!-- <span class="key-point">Node.js</span>
+                                            <span class="key-point">MongoDB</span> -->
+                                        <dd>
+                                            <ul>
+                                                <li>本篇论文提出了一种跨域蒸馏的技术，旨在利用现有的预训练视觉大模型，在计算资源受限的情况
+                                                    下，结合知识蒸馏技术，提升下游任务的小模型性能。</li>
+                                                <li>提出将Model Reprogramming和Knowledge Distillation方法结合，通过多种路径（包括分类器参数、教
+                                                    师模型输出的logits）进行知识传递。</li>
+                                                <li>在多个下游任务：Oxford102、Caltech-256-60、StanfordDogs等、多种预训练模型：Swin-B、ResNet50，上面具有显著效果，Top-1 Acc.
+                                                    超过对比方法3%~10%。</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dd><span class="key-point">专利</span>
+                                        <dd>2022.12 - 至今<span>主要发明人</span></dd>
+                                        <dt><span class="circle"></span>一种基于预训练大模型的图像分类—语义分割跨任务知识蒸馏方法 - 正在审核</dt>
+                                        <!-- <dd><span class="key-point">Semantic Segmentation</span>
+                                            <span class="key-point">Knowledge Distillation</span> -->
+                                            <!-- <span class="key-point">Node.js</span>
+                                            <span class="key-point">MongoDB</span> -->
+                                        <dd>
+                                            <ul>
+                                                <li>本篇论文提出了一种跨任务蒸馏的技术，旨在利用现有的预训练视觉大模型，在计算资源受限的情况
+                                                    下，结合知识蒸馏技术，提升下游任务的小模型性能。</li>
+                                                <li>提出利用Model Reprogramming方法完成针对语义分割的重编码，类间距离作为结构化知识，
+                                                    提升语义分割小模型的类别鉴定能力。</li>
+                                                <li>在CamVid、Pascal VOC数据集上面针对Swin-Transformer具有显著效果，mIoU提升1%~3%。</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dd><span class="key-point">项目</span>
+                                        <dd>2021.11 - 2022.4<span>算法实现</span></dd>
+                                        <dt><span class="circle"></span>溢出感知的全整型量化算法设计 - 鹏程实验室项目</dt>
+                                        <!-- <dd><span class="key-point"></span>
+                                            <span class="key-point"></span> -->
+                                            <!-- <span class="key-point">Node.js</span>
+                                            <span class="key-point">MongoDB</span> -->
+                                        <dd>
+                                            <ul>
+                                                <li>针对模型量化过程中比特数较少的累加器容易导致中间结果溢出的问题，设计了一种溢出感知的量
+                                                    化算法，能在累加器比特数受限的情况下避免中间结果溢出，从而达到压缩模型的同时保持性能的效果。</li>
+                                                <!-- <li>量化后的UNet-16bit和UNet-8bit在CityScapes数据集上近乎无损，UNet-4bit损失 1% mIoU。</li> -->
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </section>
+                    </article>
+                <article>
+                    <section class="project">
+                        <ul>
+                            <li>
+                                <dl>
+                                    <dd>
+                                        <ul>
+                                            <li>量化后的UNet-16bit和UNet-8bit在CityScapes数据集上近乎无损，UNet-4bit损失 1% mIoU。</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dd><span class="key-point">小项目</span>
+                                    <!-- <dd>2021.11 - 2022.4<span>算法实现</span></dd> -->
+                                    <dt><span class="circle"></span>TensorRT</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>基于TensorRT的量化手段和算子优化，对pytorch训练的模型进行优化、部署。</li>
+                                            <li>使用TensorRT在NVIDIA TITAN XP GPU上部署ResNet50，前后推理速度提升了1.9x, 模型在CIFAR-10上的精度减小了0.08%。</li>
+                                            <li>优化手段：int8 PTQ量化，算子融合</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dd><span class="key-point">竞赛</span>
+                                    <dd>2019.4 - 2019.8<span>队员</span></dd>
+                                    <dt><span class="circle"></span>中国大学生物理学术竞赛 全国三等奖</dt>
+                                    <dd>
+                                        <ul>
+                                            <li>熟练使用Mathematica 和MATLAB 编程，并以此求解偏微分方差。对带电转子的电场进行模拟并可视
+                                                化。</li>
+                                        </ul>
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skill">
+                        <h2>个人技能</h2>
+                        <dl class="skill-item">
+                            <dt>语言</dt>
+                            <dd>英语通过 <strong>CET-6</strong>，能够流畅阅读英文文档</dd>
+                        </dl>
+                        <dl class="skill-item">
+                            <dt>编程语言</dt>
+                            <dd>熟练使用 <strong>Python</strong>进行深度学习脚本编码、数据可视化</dd>
+                            <dd>熟悉 <strong>C++</strong>、熟练使用C++标准模板库</dd>
+                            <dd>熟悉 <strong>MATLAB</strong>、使用过MATLAB进行论文画图、对向量场进行可视化</dd>
+                        </dl>
+                        <dl class="skill-item">
+                            <dt>深度学习框架</dt>
+                            <dd>熟悉 <strong>Pytorch</strong>，熟练使用DDP进行单机多卡训练。</dd>
+                            <dd>熟悉 <strong>OpenMMLab</strong>，熟练使用MMCV、MMSeg、MMRazor进行分割模型训练、蒸馏。</dd>
+                            <dd>使用 <strong>Vue3</strong>完成简单网页的开发。</dd>
+                        </dl>
+                    </section>
+                    <section class="award">
+                        <h2>校园活动</h2>
+                        <ul>
+                            <li class="award-item">2017 – 2018 年度本科学院学生会优秀干事</li>
+                            <li class="award-item">2017 – 2018 担任本科外语协会宣传部干事，进行过手绘海报、PPT 制作、活动宣
+                                传、微信公众号推文。</li>
+                        </ul>
+                    </section>
+                </article>
+            </article>
+        </main>
+    </div>
+</body>
+
+
+<style>
+    /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+
+    html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    }
+
+    /**
+    * Remove the margin in all browsers (opinionated).
+    */
+
+    body {
+    margin: 0;
+    }
+
+    /* HTML5 display definitions
+        ========================================================================== */
+
+    /**
+    * Add the correct display in IE 9-.
+    * 1. Add the correct display in Edge, IE, and Firefox.
+    * 2. Add the correct display in IE.
+    */
+
+    article,
+    aside,
+    details, /* 1 */
+    figcaption,
+    figure,
+    footer,
+    header,
+    main, /* 2 */
+    menu,
+    nav,
+    section,
+    summary { /* 1 */
+    display: block;
+    }
+
+    /**
+    * Add the correct display in IE 9-.
+    */
+
+    audio,
+    canvas,
+    progress,
+    video {
+    display: inline-block;
+    }
+
+    /**
+    * Add the correct display in iOS 4-7.
+    */
+
+    audio:not([controls]) {
+    display: none;
+    height: 0;
+    }
+
+    /**
+    * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+    */
+
+    progress {
+    vertical-align: baseline;
+    }
+
+    /**
+    * Add the correct display in IE 10-.
+    * 1. Add the correct display in IE.
+    */
+
+    template, /* 1 */
+    [hidden] {
+    display: none;
+    }
+
+    /* Links
+        ========================================================================== */
+
+    /**
+    * 1. Remove the gray background on active links in IE 10.
+    * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+    */
+
+    a {
+    background-color: transparent; /* 1 */
+    -webkit-text-decoration-skip: objects; /* 2 */
+    }
+
+    /**
+    * Remove the outline on focused links when they are also active or hovered
+    * in all browsers (opinionated).
+    */
+
+    a:active,
+    a:hover {
+    outline-width: 0;
+    }
+
+    /* Text-level semantics
+        ========================================================================== */
+
+    /**
+    * 1. Remove the bottom border in Firefox 39-.
+    * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+    */
+
+    abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+    }
+
+    /**
+    * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+    */
+
+    b,
+    strong {
+    font-weight: inherit;
+    }
+
+    /**
+    * Add the correct font weight in Chrome, Edge, and Safari.
+    */
+
+    b,
+    strong {
+    font-weight: bolder;
+    }
+
+    /**
+    * Add the correct font style in Android 4.3-.
+    */
+
+    dfn {
+    font-style: italic;
+    }
+
+    /**
+    * Correct the font size and margin on `h1` elements within `section` and
+    * `article` contexts in Chrome, Firefox, and Safari.
+    */
+
+    h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+    }
+
+    /**
+    * Add the correct background and color in IE 9-.
+    */
+
+    mark {
+    background-color: #ff0;
+    color: #000;
+    }
+
+    /**
+    * Add the correct font size in all browsers.
+    */
+
+    small {
+    font-size: 80%;
+    }
+
+    /**
+    * Prevent `sub` and `sup` elements from affecting the line height in
+    * all browsers.
+    */
+
+    sub,
+    sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    }
+
+    sub {
+    bottom: -0.25em;
+    }
+
+    sup {
+    top: -0.5em;
+    }
+
+    /* Embedded content
+        ========================================================================== */
+
+    /**
+    * Remove the border on images inside links in IE 10-.
+    */
+
+    img {
+    border-style: none;
+    }
+
+    /**
+    * Hide the overflow in IE.
+    */
+
+    svg:not(:root) {
+    overflow: hidden;
+    }
+
+    /* Grouping content
+        ========================================================================== */
+
+    /**
+    * 1. Correct the inheritance and scaling of font size in all browsers.
+    * 2. Correct the odd `em` font sizing in all browsers.
+    */
+
+    code,
+    kbd,
+    pre,
+    samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+    }
+
+    /**
+    * Add the correct margin in IE 8.
+    */
+
+    figure {
+    margin: 1em 40px;
+    }
+
+    /**
+    * 1. Add the correct box sizing in Firefox.
+    * 2. Show the overflow in Edge and IE.
+    */
+
+    hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+    }
+
+    /* Forms
+        ========================================================================== */
+
+    /**
+    * 1. Change font properties to `inherit` in all browsers (opinionated).
+    * 2. Remove the margin in Firefox and Safari.
+    */
+
+    button,
+    input,
+    select,
+    textarea {
+    font: inherit; /* 1 */
+    margin: 0; /* 2 */
+    }
+
+    /**
+    * Restore the font weight unset by the previous rule.
+    */
+
+    optgroup {
+    font-weight: bold;
+    }
+
+    /**
+    * Show the overflow in IE.
+    * 1. Show the overflow in Edge.
+    */
+
+    button,
+    input { /* 1 */
+    overflow: visible;
+    }
+
+    /**
+    * Remove the inheritance of text transform in Edge, Firefox, and IE.
+    * 1. Remove the inheritance of text transform in Firefox.
+    */
+
+    button,
+    select { /* 1 */
+    text-transform: none;
+    }
+
+    /**
+    * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+    *    controls in Android 4.
+    * 2. Correct the inability to style clickable types in iOS and Safari.
+    */
+
+    button,
+    html [type="button"], /* 1 */
+    [type="reset"],
+    [type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    }
+
+    /**
+    * Remove the inner border and padding in Firefox.
+    */
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+    }
+
+    /**
+    * Restore the focus styles unset by the previous rule.
+    */
+
+    button:-moz-focusring,
+    [type="button"]:-moz-focusring,
+    [type="reset"]:-moz-focusring,
+    [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+    }
+
+    /**
+    * Change the border, margin, and padding in all browsers (opinionated).
+    */
+
+    fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+    }
+
+    /**
+    * 1. Correct the text wrapping in Edge and IE.
+    * 2. Correct the color inheritance from `fieldset` elements in IE.
+    * 3. Remove the padding so developers are not caught out when they zero out
+    *    `fieldset` elements in all browsers.
+    */
+
+    legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+    }
+
+    /**
+    * Remove the default vertical scrollbar in IE.
+    */
+
+    textarea {
+    overflow: auto;
+    }
+
+    /**
+    * 1. Add the correct box sizing in IE 10-.
+    * 2. Remove the padding in IE 10-.
+    */
+
+    [type="checkbox"],
+    [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    }
+
+    /**
+    * Correct the cursor style of increment and decrement buttons in Chrome.
+    */
+
+    [type="number"]::-webkit-inner-spin-button,
+    [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+    }
+
+    /**
+    * 1. Correct the odd appearance in Chrome and Safari.
+    * 2. Correct the outline style in Safari.
+    */
+
+    [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+    }
+
+    /**
+    * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+    */
+
+    [type="search"]::-webkit-search-cancel-button,
+    [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    }
+
+    /**
+    * Correct the text style of placeholders in Chrome, Edge, and Safari.
+    */
+
+    ::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+    }
+
+    /**
+    * 1. Correct the inability to style clickable types in iOS and Safari.
+    * 2. Change font properties to `inherit` in Safari.
+    */
+
+    ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+    }
+  
+    body {
+        font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        line-height: 1.5em;
+        display: flex;
+        justify-content: center;
+        width:210mm;
+        height:297mm;
+        <!-- border:1px #f00 solid; -->
+    }
+    
+    .container {
+        /* margin-top: 2.66666667em; */
+        writing-mode: tb-lr;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    h1,
+    strong,
+    a {
+        color: rgb(102, 121, 223);
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    dl {
+        margin: 0;
+    }
+    
+    dl dt {
+        font-weight: bold;
+        font-size: 1.04em;
+    }
+    
+    
+    /* css for header */
+    
+    header {
+        display: flex;
+    }
+    
+    h1 {
+        margin-bottom: 0;
+    }
+    
+    address {
+        font-style: normal;
+    }
+    
+    .contact li span {
+        padding:0px;
+        writing-mode: lr-tb;
+        /* width: 5.33333333em; */
+        /* 80/15 */
+        text-align: right;
+        display: inline-block;
+    }
+    
+    
+    /* end header */
+    
+    
+    /* css for content */
+    
+    .content {
+        display: flex;
+        /* margin-top: 1.33333333em; */
+    }
+    
+    .content > article > section {
+        padding: .5em 0;
+    }
+    
+    h2 {
+        font-size: 1.33333333em;
+        /* 20/15 */
+        padding-bottom: .33333333em;
+        /* 5/15 */
+        border-bottom: 1px solid black;
+    }
+    
+    
+    /* end content */
+    
+    .circle {
+        width: .53333333em;
+        height: .53333333em;
+        /* 8/15 */
+        margin: 0 .66666667em;
+        /* 10/15 */
+        background: black;
+        border-radius: 100%;
+        display: inline-block;
+    }
+    
+    
+    /* css for education */
+    
+    .edu-year {
+        width: 5.8em;
+        display: inline-block;
+    }
+    
+    .edu-content {
+        display: inline-block;
+        margin-left: 6.7em;
+        /* (87+10+4-0.5)/15 */
+        padding-left: .9em;
+        /* 13.5/15 */
+        border-left: .06666667em solid black;
+        /* 1/15 */
+    }
+    
+    .edu-title {
+        font-weight: bold;
+        margin-bottom: .2em;
+        /* 3/15 */
+        display: inline-block;
+    }
+    
+    .edu-placeholder {
+        height: .625em;
+        border-left: 1px solid black;
+        margin-left: 6.7em;
+        /* (87+10+4-0.5)/15 */
+    }
+    
+    
+    /* end education */
+    
+    
+    /* css for project */
+    
+    .project dl dt {
+        margin-bottom: .2em;
+        /* writing-mode: lr-tb; */
+    }
+    
+    .project dl dd {
+        margin-left: .26666666em;
+        /* 26666666.5/2 */
+        padding-left: .9em;
+        /* 13.5/15 */
+        border-left: .06666667em solid black;
+        /* 1px */
+    }
+    .project .circle {
+        margin-left: 0em;
+    }
+    .project ul {
+        break-inside: auto;
+        /* display: inline-block; */
+    }
+    .project li {
+        display: inline-block;
+        writing-mode: tb-lr;
+    }
+    .project dl dd:first-child {
+        padding-top: .66666667em;
+        /* 10/15 */
+    }
+    .project dl dd:first-child span {
+        display: inline-block;
+        width: 6em;
+        background-color: rgb(233,236,251);
+        color: rgb(102, 121, 223);
+        font-size: .8em;
+        text-align: center;
+        margin-left: 1em;
+        line-height: 1.5em;
+        border-radius: .75em;
+    }
+    .project dl dd:last-child {
+        padding-bottom: .66666667em;
+    }
+    
+    .key-point {
+        background: rgb(102, 121, 223);
+        color: white;
+        padding: .13333333em .33333333em;
+        /* 2px 5px */
+        margin: .33333333em 0 .6em;
+        /* 5/15 */
+        display: inline-block;
+        font-size: .875em;
+        /* 14/16 */
+    }
+    
+    
+    /* end project */
+    
+    .award-item:before,
+    .skill-item dd:before,
+    .other-item li:before,
+    .eval-item li:before,
+    .project dl dd li:before {
+        content: "";
+        background: url('../img/check.png') no-repeat;
+        background-size: .8em .8em;
+        /* 12/15 */
+        display: inline-block;
+        width: .8em;
+        height: .8em;
+        padding-right: .33333333em;
+        /* 5/15 */
+    }
+    
+    
+    /* css for skill */
+    
+    .skill-item dd {
+        margin-left: 0;
+    }
+    
+    .skill-item dt {
+        margin: .33333333em 0;
+        /* 5/15 */
+    }
+    
+    .skill-item {
+        margin-bottom: 1em;
+        /* 15/15 */
+    }
+    
+    .skill-item:last-child {
+        margin-bottom: 0;
+    }
+    
+    
+    /* end skill */
+    
+    
+    /* css for footer */
+    
+    footer {
+        text-align: center;
+        font-size: .8em;
+        margin: 3em 0 2em;
+    }
+    
+    
+    /* end footer */
+    
+    
+    /* css for media */
+    
+    @media screen and (min-width: 210mm) {
+        .container {
+            width: 210mm;
+        }
+        header {
+            justify-content: space-between;
+        }
+        .title {
+            text-align: left;
+        }
+        .content > article {
+            width: 190mm;
+        }
+        .content > article:first-child {
+            padding-right: 2em;
+        }
+        .content > article:last-child {
+            padding-left: 2em;
+        }
+    }
+    
+    @media screen and (max-width: 210mm) {
+        .container {
+            width: 100%;
+        }
+        .content > article {
+            width: 100%;
+        }
+        header,
+        .content {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .title {
+            text-align: center;
+        }
+        header {
+            align-items: center;
+        }
+        .content > article {
+            padding: 0;
+        }
+        address {
+            font-size: .94em;
+        }
+    }
+    
+    
+    /* end media */
+    
+</style>
+</html>
